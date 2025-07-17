@@ -61,6 +61,19 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+# Ignore all common image/texture formats
+*.png
+*.jpg
+*.jpeg
+*.tga
+*.tif
+*.tiff
+*.psd
+*.bmp
+*.gif
+*.exr
+*.hdr
+
 # Crashlytics generated file
 crashlytics-build.properties
 
