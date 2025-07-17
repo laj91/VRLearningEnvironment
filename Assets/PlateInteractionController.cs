@@ -18,7 +18,7 @@ public class PlateInteractionController : MonoBehaviour
         {
             interactable.selectEntered.AddListener(OnGrab);
             interactable.selectExited.AddListener(OnRelease);  // Tilføj lytter til slip
-            Debug.Log("OnGrab and OnRelease added to plate");
+            //Debug.Log("OnGrab and OnRelease added to plate");
         }
     }
 
@@ -31,7 +31,7 @@ public class PlateInteractionController : MonoBehaviour
 
     private void OnGrab(SelectEnterEventArgs args)
     {
-        Debug.Log($"{gameObject.name} has been grabbed!");
+        //Debug.Log($"{gameObject.name} has been grabbed!");
         if (wholePlateRb.isKinematic)
         {
             wholePlateRb.isKinematic = false; // Gør tallerkenen dynamisk, når den bliver grebet

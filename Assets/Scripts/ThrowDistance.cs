@@ -25,7 +25,7 @@ public class ThrowDistance : MonoBehaviour
     private void OnGrab(SelectEnterEventArgs args)
     {
         Debug.Log("Object grabbed");
-        // Nulstil kastedistancen, når objektet grebes
+        // Nulstil kastedistancen, nï¿½r objektet grebes
         if (isThrown)
         {
             displayThrowDistance.ClearCurrentObject();
@@ -36,14 +36,14 @@ public class ThrowDistance : MonoBehaviour
     public void OnRelease(SelectExitEventArgs args)
     {
         Debug.Log("Object released");
-        // Registrer startpositionen når objektet slippes
+        // Registrer startpositionen nï¿½r objektet slippes
         startPosition = transform.position;
         isThrown = true;
 
         // Angiv til DisplayThrowDistance, at dette objekt er valgt
         displayThrowDistance.SetCurrentObject(this);
 
-        // Start Coroutine til at måle kastet
+        // Start Coroutine til at mï¿½le kastet
         StartCoroutine(MeasureThrowDistance());
     }
 
@@ -54,22 +54,22 @@ public class ThrowDistance : MonoBehaviour
 
         while (isThrown)
         {
-            // Opdater kastedistancen, mens objektet bevæger sig
+            // Opdater kastedistancen, mens objektet bevï¿½ger sig
             throwDistance = Vector3.Distance(startPosition, transform.position);
             Debug.Log($"Current throw distance: {throwDistance}");
-            Debug.Log($"Current velocity: {rb.velocity.magnitude}");
+            Debug.Log($"Current velocity: {rb.linearVelocity.magnitude}");
 
-            // Tjek om objektet er stoppet med at bevæge sig
-            if (rb.velocity.magnitude <= 0.01f)
+            // Tjek om objektet er stoppet med at bevï¿½ge sig
+            if (rb.linearVelocity.magnitude <= 0.01f)
             {
                 Debug.Log("Object has stopped moving.");
                 isThrown = false;
             }
 
-            // Opdater distancen mens objektet bevæger sig
+            // Opdater distancen mens objektet bevï¿½ger sig
             displayThrowDistance.UpdateDistanceText(throwDistance);
 
-            // Vent til næste frame
+            // Vent til nï¿½ste frame
             yield return null;
         }
 

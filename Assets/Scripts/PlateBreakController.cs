@@ -42,7 +42,7 @@ public class PlateBreakController : MonoBehaviour
     {
         // Hent kollisionens relative hastighed (velocity)
         float velocity = collision.relativeVelocity.magnitude;
-        Debug.Log(collision.gameObject.name + "collided with " + gameObject.name);
+        //Debug.Log(collision.gameObject.name + "collided with " + gameObject.name);
 
         // Tjek om det objekt, tallerkenen rammer, har et "SurfaceMaterial" script (eller lignende)
         SurfaceMaterial surface = collision.gameObject.GetComponent<SurfaceMaterial>();
@@ -67,7 +67,7 @@ public class PlateBreakController : MonoBehaviour
     void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        Debug.Log($"Plate took {damage} damage, current health: {currentHealth}");
+        //Debug.Log($"Plate took {damage} damage, current health: {currentHealth}");
 
         // Hvis tallerkenens liv når 0, destrueres den og erstattes med den brudte version
         if (currentHealth <= 0)

@@ -1,0 +1,3082 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a6b9796d1c0440eba061ace5e9dff6, type: 3}
+  m_Name: 'Generate a seamless texture of an outdoor wooden terrace with planks aligned
+    side by side with small gaps. The planks are arranged lengthwise, and where two
+    planks meet in extension, there are visible '
+  m_EditorClassIdentifier: 
+  assetsData:
+  - rid: 7155291856707256585
+  - rid: 7155291856707256591
+  - rid: 7155291856707256597
+  - rid: 7155291856707256603
+  - rid: 7155291856707256609
+  - rid: 7155291856707256615
+  - rid: 7155291856707256621
+  - rid: 7155291856707256627
+  - rid: 7155291856707256633
+  - rid: 7155291856707256639
+  - rid: 7155291856707256645
+  - rid: 7155291856707256651
+  - rid: 7155291856707256657
+  - rid: 7155291856707256663
+  - rid: 7155291856707256669
+  - rid: 7155291856707256675
+  - rid: 7155291856707256681
+  - rid: 7155291856707256687
+  - rid: 7155291856707256693
+  - rid: 7155291856707256699
+  - rid: 7155291856707256705
+  - rid: 7155291856707256711
+  - rid: 7155291856707256717
+  - rid: 7155291856707256723
+  - rid: 7155291856707256729
+  - rid: 7155291856707256735
+  - rid: 7155291856707256741
+  - rid: 7155291856707256747
+  currentMode: TextToImage
+  m_Data:
+  - rid: 7155291856707256577
+  - rid: 7155291856707256578
+  - rid: 7155291856707256579
+  preRefinedArtifact:
+    rid: -2
+  refinedArtifact:
+    rid: -2
+  selectedArtifact:
+    rid: 7155291856707256603
+  m_Operators:
+  - rid: 7155291856707256580
+  - rid: 7155291856707256581
+  - rid: 7155291856707256582
+  - rid: 7155291856707256583
+  - rid: 7155291856707256584
+  m_PreRefineOperators: []
+  m_ExportedArtifacts: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 7155291856707256577
+      type: {class: BookmarkManager, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_BookmarkedArtifacts:
+          m_Values: []
+        m_IsFilterEnabled: 0
+    - rid: 7155291856707256578
+      type: {class: MainUI/UISize, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_NodeListWidth: 241.2
+        m_NodeListRefineWidth: 300
+        m_AssetListRefineWidth: 200
+    - rid: 7155291856707256579
+      type: {class: GenerateButtonData, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data: 
+    - rid: 7155291856707256580
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256581
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - 'Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. '
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256582
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256583
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256584
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256585
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 3cbb3afe-6a5f-47f9-a48b-1075dcff126e
+        BatchRequestIdentifier: 
+        Seed: 1479776618
+        m_Operators:
+        - rid: 7155291856707256586
+        - rid: 7155291856707256587
+        - rid: 7155291856707256588
+        - rid: 7155291856707256589
+        - rid: 7155291856707256590
+        history:
+        - rid: 7155291856707256585
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256586
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256587
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. The texture should be detailed,
+            realistic, and tileable, suitable for use in Unity
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256588
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256589
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          - 
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256590
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256591
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 00a6460d-3f40-450e-9c0a-409bb436e76e
+        BatchRequestIdentifier: 
+        Seed: 4066006841
+        m_Operators:
+        - rid: 7155291856707256592
+        - rid: 7155291856707256593
+        - rid: 7155291856707256594
+        - rid: 7155291856707256595
+        - rid: 7155291856707256596
+        history:
+        - rid: 7155291856707256591
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256592
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256593
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. The texture should be detailed,
+            realistic, and tileable, suitable for use in Unity
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256594
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256595
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          - 
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256596
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256597
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 22398b30-a9eb-4a73-98ba-7c9f00328ce4
+        BatchRequestIdentifier: 
+        Seed: 471060107
+        m_Operators:
+        - rid: 7155291856707256598
+        - rid: 7155291856707256599
+        - rid: 7155291856707256600
+        - rid: 7155291856707256601
+        - rid: 7155291856707256602
+        history:
+        - rid: 7155291856707256597
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256598
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256599
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. The texture should be detailed,
+            realistic, and tileable, suitable for use in Unity
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256600
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256601
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          - 
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256602
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256603
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 1a0035d2-b21b-4dc2-bfbc-9ecc962605d0
+        BatchRequestIdentifier: 
+        Seed: 2408414703
+        m_Operators:
+        - rid: 7155291856707256604
+        - rid: 7155291856707256605
+        - rid: 7155291856707256606
+        - rid: 7155291856707256607
+        - rid: 7155291856707256608
+        history:
+        - rid: 7155291856707256603
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256604
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256605
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. The texture should be detailed,
+            realistic, and tileable, suitable for use in Unity
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256606
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256607
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          - 
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256608
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256609
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: a769edf4-7fa5-42eb-88a2-d21a66e6e752
+        BatchRequestIdentifier: 
+        Seed: 3122236013
+        m_Operators:
+        - rid: 7155291856707256610
+        - rid: 7155291856707256611
+        - rid: 7155291856707256612
+        - rid: 7155291856707256613
+        - rid: 7155291856707256614
+        history:
+        - rid: 7155291856707256609
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256610
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256611
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. The texture should be detailed,
+            realistic, and tileable, suitable for use in Unity
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256612
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256613
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256614
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256615
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 33819e84-5864-46af-88de-d4102f558339
+        BatchRequestIdentifier: 
+        Seed: 1577324726
+        m_Operators:
+        - rid: 7155291856707256616
+        - rid: 7155291856707256617
+        - rid: 7155291856707256618
+        - rid: 7155291856707256619
+        - rid: 7155291856707256620
+        history:
+        - rid: 7155291856707256615
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256616
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256617
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. The texture should be detailed,
+            realistic, and tileable, suitable for use in Unity
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256618
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256619
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256620
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256621
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 735083ee-50b1-42fe-97af-9d868c35ff68
+        BatchRequestIdentifier: 
+        Seed: 4070214430
+        m_Operators:
+        - rid: 7155291856707256622
+        - rid: 7155291856707256623
+        - rid: 7155291856707256624
+        - rid: 7155291856707256625
+        - rid: 7155291856707256626
+        history:
+        - rid: 7155291856707256621
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256622
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256623
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. The texture should be detailed,
+            realistic, and tileable, suitable for use in Unity
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256624
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256625
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256626
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256627
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 236d52dc-542b-42bf-9661-4389b8524b65
+        BatchRequestIdentifier: 
+        Seed: 2174146918
+        m_Operators:
+        - rid: 7155291856707256628
+        - rid: 7155291856707256629
+        - rid: 7155291856707256630
+        - rid: 7155291856707256631
+        - rid: 7155291856707256632
+        history:
+        - rid: 7155291856707256627
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256628
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256629
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. The texture should be detailed,
+            realistic, and tileable, suitable for use in Unity
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256630
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256631
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 20
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256632
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256633
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: eaebcda8-e1b4-493f-a435-d8b710b05094
+        BatchRequestIdentifier: 
+        Seed: 207832669
+        m_Operators:
+        - rid: 7155291856707256634
+        - rid: 7155291856707256635
+        - rid: 7155291856707256636
+        - rid: 7155291856707256637
+        - rid: 7155291856707256638
+        history:
+        - rid: 7155291856707256633
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256634
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256635
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256636
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256637
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256638
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256639
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 5141c95d-e0a5-4c1d-a92b-965f0d5c7378
+        BatchRequestIdentifier: 
+        Seed: 1323651112
+        m_Operators:
+        - rid: 7155291856707256640
+        - rid: 7155291856707256641
+        - rid: 7155291856707256642
+        - rid: 7155291856707256643
+        - rid: 7155291856707256644
+        history:
+        - rid: 7155291856707256639
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256640
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256641
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256642
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256643
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256644
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256645
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 3f900f3c-1961-4d45-8aac-2c0b2dc6ff8d
+        BatchRequestIdentifier: 
+        Seed: 716513399
+        m_Operators:
+        - rid: 7155291856707256646
+        - rid: 7155291856707256647
+        - rid: 7155291856707256648
+        - rid: 7155291856707256649
+        - rid: 7155291856707256650
+        history:
+        - rid: 7155291856707256645
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256646
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256647
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256648
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256649
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256650
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256651
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 98e6127c-f572-4406-b318-46a9d3167d8d
+        BatchRequestIdentifier: 
+        Seed: 1192265319
+        m_Operators:
+        - rid: 7155291856707256652
+        - rid: 7155291856707256653
+        - rid: 7155291856707256654
+        - rid: 7155291856707256655
+        - rid: 7155291856707256656
+        history:
+        - rid: 7155291856707256651
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256652
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256653
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256654
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256655
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256656
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256657
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: ccd35063-67c2-4219-8eb8-a0e29cc9583d
+        BatchRequestIdentifier: 
+        Seed: 2877628331
+        m_Operators:
+        - rid: 7155291856707256658
+        - rid: 7155291856707256659
+        - rid: 7155291856707256660
+        - rid: 7155291856707256661
+        - rid: 7155291856707256662
+        history:
+        - rid: 7155291856707256657
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256658
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256659
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256660
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256661
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256662
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256663
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 98083fdc-2ac9-47d5-8262-3d09ff0323ce
+        BatchRequestIdentifier: 
+        Seed: 2286628526
+        m_Operators:
+        - rid: 7155291856707256664
+        - rid: 7155291856707256665
+        - rid: 7155291856707256666
+        - rid: 7155291856707256667
+        - rid: 7155291856707256668
+        history:
+        - rid: 7155291856707256663
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256664
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256665
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256666
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256667
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256668
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256669
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 6067c18c-de65-409a-aa05-5cf7420f3ac2
+        BatchRequestIdentifier: 
+        Seed: 4054973
+        m_Operators:
+        - rid: 7155291856707256670
+        - rid: 7155291856707256671
+        - rid: 7155291856707256672
+        - rid: 7155291856707256673
+        - rid: 7155291856707256674
+        history:
+        - rid: 7155291856707256669
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256670
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256671
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256672
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256673
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256674
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256675
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 685bcd5e-a1e8-430d-a71b-8cc3b5582ffb
+        BatchRequestIdentifier: 
+        Seed: 836775177
+        m_Operators:
+        - rid: 7155291856707256676
+        - rid: 7155291856707256677
+        - rid: 7155291856707256678
+        - rid: 7155291856707256679
+        - rid: 7155291856707256680
+        history:
+        - rid: 7155291856707256675
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256676
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256677
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256678
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256679
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256680
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256681
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 78a29f3f-ae81-432a-bd14-848da74a4937
+        BatchRequestIdentifier: 
+        Seed: 4148256247
+        m_Operators:
+        - rid: 7155291856707256682
+        - rid: 7155291856707256683
+        - rid: 7155291856707256684
+        - rid: 7155291856707256685
+        - rid: 7155291856707256686
+        history:
+        - rid: 7155291856707256681
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256682
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256683
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256684
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256685
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256686
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256687
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 4f93143e-6d4b-4c5b-be97-539c77865d9e
+        BatchRequestIdentifier: 
+        Seed: 1856782952
+        m_Operators:
+        - rid: 7155291856707256688
+        - rid: 7155291856707256689
+        - rid: 7155291856707256690
+        - rid: 7155291856707256691
+        - rid: 7155291856707256692
+        history:
+        - rid: 7155291856707256687
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256688
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256689
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256690
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256691
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256692
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256693
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: e5723a51-c8cd-45f9-8ba3-ac2ea32f8a63
+        BatchRequestIdentifier: 
+        Seed: 29843199
+        m_Operators:
+        - rid: 7155291856707256694
+        - rid: 7155291856707256695
+        - rid: 7155291856707256696
+        - rid: 7155291856707256697
+        - rid: 7155291856707256698
+        history:
+        - rid: 7155291856707256693
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256694
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256695
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256696
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256697
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256698
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256699
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 6e2cc2c2-ed29-4904-9552-217b91172fde
+        BatchRequestIdentifier: 
+        Seed: 1316494195
+        m_Operators:
+        - rid: 7155291856707256700
+        - rid: 7155291856707256701
+        - rid: 7155291856707256702
+        - rid: 7155291856707256703
+        - rid: 7155291856707256704
+        history:
+        - rid: 7155291856707256699
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256700
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256701
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. The texture must not contain any repeating patterns that break
+            realism when tiled
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256702
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256703
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256704
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256705
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 8da050ad-9e83-483f-bfee-53c9e4720302
+        BatchRequestIdentifier: 
+        Seed: 1765523209
+        m_Operators:
+        - rid: 7155291856707256706
+        - rid: 7155291856707256707
+        - rid: 7155291856707256708
+        - rid: 7155291856707256709
+        - rid: 7155291856707256710
+        history:
+        - rid: 7155291856707256705
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256706
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256707
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - 'Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. '
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256708
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256709
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256710
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256711
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 76f94771-8f1e-47f7-80ad-c66f2f11af4f
+        BatchRequestIdentifier: 
+        Seed: 2001901710
+        m_Operators:
+        - rid: 7155291856707256712
+        - rid: 7155291856707256713
+        - rid: 7155291856707256714
+        - rid: 7155291856707256715
+        - rid: 7155291856707256716
+        history:
+        - rid: 7155291856707256711
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256712
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256713
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - 'Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. '
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256714
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256715
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256716
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256717
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: ddec368a-c93e-44b6-bf31-1c6c6615cd88
+        BatchRequestIdentifier: 
+        Seed: 575946058
+        m_Operators:
+        - rid: 7155291856707256718
+        - rid: 7155291856707256719
+        - rid: 7155291856707256720
+        - rid: 7155291856707256721
+        - rid: 7155291856707256722
+        history:
+        - rid: 7155291856707256717
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256718
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256719
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - 'Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. '
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256720
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256721
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256722
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256723
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 05bb5355-a239-43c8-bb41-a1af64108c75
+        BatchRequestIdentifier: 
+        Seed: 3321630410
+        m_Operators:
+        - rid: 7155291856707256724
+        - rid: 7155291856707256725
+        - rid: 7155291856707256726
+        - rid: 7155291856707256727
+        - rid: 7155291856707256728
+        history:
+        - rid: 7155291856707256723
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256724
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256725
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - 'Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. '
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256726
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256727
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256728
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256729
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 3a9b8ead-8668-4a8a-8c28-d52fa12171a5
+        BatchRequestIdentifier: 
+        Seed: 2060306282
+        m_Operators:
+        - rid: 7155291856707256730
+        - rid: 7155291856707256731
+        - rid: 7155291856707256732
+        - rid: 7155291856707256733
+        - rid: 7155291856707256734
+        history:
+        - rid: 7155291856707256729
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256730
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256731
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - 'Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. '
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256732
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256733
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256734
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256735
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: f97d22a8-0203-4dfd-835e-bd902d370fad
+        BatchRequestIdentifier: 
+        Seed: 3334310199
+        m_Operators:
+        - rid: 7155291856707256736
+        - rid: 7155291856707256737
+        - rid: 7155291856707256738
+        - rid: 7155291856707256739
+        - rid: 7155291856707256740
+        history:
+        - rid: 7155291856707256735
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256736
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256737
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - 'Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. '
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256738
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256739
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256740
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256741
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 93757e13-cd8f-4266-af8e-8fff4028797f
+        BatchRequestIdentifier: 
+        Seed: 125461271
+        m_Operators:
+        - rid: 7155291856707256742
+        - rid: 7155291856707256743
+        - rid: 7155291856707256744
+        - rid: 7155291856707256745
+        - rid: 7155291856707256746
+        history:
+        - rid: 7155291856707256741
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256742
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256743
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - 'Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. '
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256744
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256745
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256746
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256747
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: TextToImage
+        Guid: 6de87f68-91a0-4bd6-b332-362971d11233
+        BatchRequestIdentifier: 
+        Seed: 3539281625
+        m_Operators:
+        - rid: 7155291856707256748
+        - rid: 7155291856707256749
+        - rid: 7155291856707256750
+        - rid: 7155291856707256751
+        - rid: 7155291856707256752
+        history:
+        - rid: 7155291856707256747
+        children: []
+        IsPbrMode: 0
+    - rid: 7155291856707256748
+      type: {class: GenerateOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: GenerateOperator
+          key: GenerateOperator
+          version: 1.0.0
+          settings:
+          - TextToImage
+          - 4
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256749
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - 'Generate a seamless texture of an outdoor wooden terrace with planks
+            aligned side by side with small gaps. The planks are arranged lengthwise,
+            and where two planks meet in extension, there are visible joints at their
+            ends. The wood is gray-toned, weathered from exposure to Scandinavian
+            wind and weather, and features subtle details of wear, such as faint
+            greenish patches from moss or algae. '
+          - 'Do not include any extra objects, such as furniture, leaves, or debris.
+            Avoid overly bright or unnatural colors, polished or new wood appearance,
+            excessive moss or algae covering the surface, or any visible lighting
+            effects. '
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256750
+      type: {class: LoraOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: LoraOperator
+          key: LoraOperator
+          version: 0.0.1
+          settings:
+          - guid1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256751
+      type: {class: ReferenceOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: ReferenceOperator
+          key: ReferenceOperator
+          version: 0.0.2
+          settings:
+          - 
+          - 
+          - 0
+          - 40
+          - '#000000'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 7155291856707256752
+      type: {class: MaskOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: MaskOperator
+          key: MaskOperator
+          version: 0.0.1
+          settings:
+          - 
+          - True
+          - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
