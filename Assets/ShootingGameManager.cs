@@ -13,26 +13,28 @@ public class ShootingGameManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] TextMeshProUGUI pointCanvasText;
     [SerializeField] private GameObject finishCanvas;
-    [SerializeField] private TextMeshProUGUI timeAndPoints;
-    //[SerializeField] private TextMeshProUGUI totalScore;
+    [SerializeField] private TextMeshProUGUI score;
+    [SerializeField] private TextMeshProUGUI timePassed;
     
     private int numberOfTargets = 0;
     private int totalPoints = 0;
     private int currentLevelIndex = 0;
     private bool isGameRunning = false;
 
+    // Starts the current level and sets up objects and player position
     public void StartLevel()
     {
         isGameRunning = true;
         LevelData currentLevel = levels[currentLevelIndex];
 
-        // Aktivér og deaktiver objekter
+        // Enable and count target objects
         foreach (GameObject obj in currentLevel.objectsToEnable)
         {
             obj.SetActive(true);
             numberOfTargets++;
         }
 
+        // Disable objects if any are specified
         if (currentLevel.objectsToDisable != null)
         {
             foreach (GameObject obj in currentLevel.objectsToDisable)
@@ -41,8 +43,7 @@ public class ShootingGameManager : MonoBehaviour
             }
         }
         
-
-        // Flyt objekter til deres positioner
+        // Move enabled objects to their designated positions
         for (int i = 0; i < currentLevel.objectPositions.Length; i++)
         {
             if (currentLevel.objectsToEnable.Length > i)
@@ -52,12 +53,12 @@ public class ShootingGameManager : MonoBehaviour
             }
         }
 
-        // Flyt spilleren til startposition
+        // Move player to the starting position
         player.transform.position = currentLevel.playerStartPosition.position;
         player.transform.rotation = currentLevel.playerStartPosition.rotation;
-
-        
     }
+
+    // Updates the timer and UI while the game is running
     private void Update()
     {
         if (isGameRunning)
@@ -65,12 +66,12 @@ public class ShootingGameManager : MonoBehaviour
             if (time > 0)
             {
                 time -= Time.deltaTime;
+                timePassed.text = $"Time: {Mathf.Round(time)}";
             }
         }
-        
-
     }
 
+    // Advances to the next level or ends the game if all levels are completed
     public void NextLevel()
     {
         if (currentLevelIndex < levels.Count - 1)
@@ -80,11 +81,12 @@ public class ShootingGameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Du har gennemført alle niveauer!");
-            // Et eller andet skal ske her
+            Debug.Log("You have completed all levels!");
+            // Something should happen here
         }
     }
 
+    // Adds points when a target is hit and checks for level completion
     public void AddPoints()
     {
         totalPoints++;
@@ -99,15 +101,11 @@ public class ShootingGameManager : MonoBehaviour
         }
     }
 
+    // Displays the finish screen and stops the game
     private void FinishScreen()
     {
         finishCanvas.SetActive(true);
-        timeAndPoints.text = $"Total Time: {time}\r\nTotal Points: {totalPoints}";
+        score.text = $"Total Time: {time}\r\nTotal Points: {totalPoints}";
         isGameRunning = false;
-        //Spilleren får vist et canvas med samlede point og tid
-        //Spilleren bliver spurgt om de vil fortsætte, eller afslutte
-            //Her skal currentLevelIndex++; og StartLevel(); kaldes
     }
-
-
 }

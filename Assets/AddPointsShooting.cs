@@ -6,24 +6,22 @@ public class AddPointsShooting : MonoBehaviour
 
     private bool hasBeenHit = false;
 
+    // Called when this object collides with another object
     private void OnCollisionEnter(Collision collision)
     {
         Rigidbody Rb = gameObject.GetComponent<Rigidbody>();
 
+        // If hit by a bullet and not already hit, add points
         if (collision.gameObject.tag == "Bullet" && hasBeenHit == false)
         {
-            //Hvis ikke allerede du er blevet ramt, så tilføj point
             gameManager.AddPoints();
             hasBeenHit = true;
 
-            Debug.Log($"Rigidbody kinemtaic on {gameObject.name} is {Rb.isKinematic}");
+            Debug.Log($"Rigidbody kinematic on {gameObject.name} is {Rb.isKinematic}");
+            // If the rigidbody is kinematic, set it to non-kinematic
             if (Rb.isKinematic == true)
                 Rb.isKinematic = false;
-                Debug.Log($"Rigidbody kinemtaic on {gameObject.name} is {Rb.isKinematic}");
-
+            Debug.Log($"Rigidbody kinematic on {gameObject.name} is {Rb.isKinematic}");
         }
-            
-
-
     }
 }

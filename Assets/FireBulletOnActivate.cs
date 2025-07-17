@@ -19,7 +19,7 @@ public class FireBulletOnActivate : MonoBehaviour
     void Start()
     {
         startGame = GameObject.Find("! Manager !");
-        // Find og valider n�dvendige referencer
+        // Find and validate required references
         if (startGame == null)
         {
             Debug.LogError("StartGame reference is missing!");
@@ -44,7 +44,7 @@ public class FireBulletOnActivate : MonoBehaviour
 
         if (!startShootingGameScript.gameHasStarted)
         {
-            // Hvis spillet ikke er startet, tilf�j lytter til grabbable
+            // If the game has not started, add listener to grabbable
             if (grabbable == null)
             {
                 Debug.LogError("XRGrabInteractable is missing on " + gameObject.name);
@@ -57,7 +57,7 @@ public class FireBulletOnActivate : MonoBehaviour
         {
             Debug.Log("StartShootingGame = " + startShootingGameScript.gameHasStarted);
             Destroy(gameObject.GetComponent<XRGrabInteractable>());
-            // Hvis spillet er startet, aktiver trigger-input
+            // If the game has started, enable trigger input
             if (shootingTrigger == null)
             {
                 Debug.LogError("ShootingTrigger is not assigned!");
@@ -71,7 +71,7 @@ public class FireBulletOnActivate : MonoBehaviour
 
     private void OnDestroy()
     {
-        // Fjern event-lyttere for at undg� memory leaks
+        // Remove event listeners to avoid memory leaks
         if (grabbable != null)
         {
             grabbable.activated.RemoveListener(FireBullet);
@@ -84,17 +84,20 @@ public class FireBulletOnActivate : MonoBehaviour
         }
     }
 
+    // Fires a bullet when the interactable is activated
     private void FireBullet(ActivateEventArgs arg)
     {
         FireBulletCommon();
     }
 
+    // Fires a bullet when the shooting trigger is pressed during the game
     private void FireBulletInShootingGame(InputAction.CallbackContext context)
     {
         Debug.Log("Button press registered in game");
         FireBulletCommon();
     }
 
+    // Common logic for spawning and firing a bullet
     private void FireBulletCommon()
     {
         if (bullet == null || spawnPoint == null)
