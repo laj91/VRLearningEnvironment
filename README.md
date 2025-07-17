@@ -15,10 +15,10 @@ This is a personal VR learning project developed in Unity as part of my explorat
 
 ### Screenshots  
 <!-- Replace the image URLs below with actual Imgur links -->
-![Screenshot 1 – Outside environment](https://imgur.com/vo4CWJK)  
-![Screenshot 2 – Outside Environment](https://i.imgur.com/yourimage2.png)  
-![Screenshot 3 – Inside](https://imgur.com/SdsB6nO)  
-![Screenshot 4 – Inside](https://imgur.com/iQoWp5m)
+![Screenshot 1 – Outside environment](https://imgur.com/vo4CWJK.png)  
+![Screenshot 2 – Outside Environment](https://imgur.com/GY62G17.png)  
+![Screenshot 3 – Inside](https://imgur.com/SdsB6nO.png)  
+![Screenshot 4 – Inside](https://imgur.com/iQoWp5m.png)
 
 ### Demo Video  
 <!-- Replace the YouTube link with your own unlisted video -->
